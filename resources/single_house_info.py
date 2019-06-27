@@ -8,9 +8,9 @@ resource_fields = {
 }
 
 class DeleteDao(object):
-    def __init__(self, deleted_count, status):
+    def __init__(self, deleted_count, is_ok):
         self.deleted_count = deleted_count
-        self.status = status
+        self.is_ok = is_ok
 
 class SingleHouseInfo(Resource):
     def __init__(self, **kwargs):
